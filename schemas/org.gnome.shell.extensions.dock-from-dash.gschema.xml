@@ -51,5 +51,11 @@
         <description>Duration, in milliseconds, of dock hiding animation.</description>
     </key>
 
+    <key type="b" name="cycle-windows">
+        <default>false</default>
+        <summary>Cycle windows on icon click</summary>
+        <description>Clicking on the icon of a running application cycles through its open windows instead of showing the activities overview.</description>
+    </key>
+
     </schema>
 </schemalist>

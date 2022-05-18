@@ -184,7 +184,12 @@ class Extension {
                         }
                     break;
                     default:
-                        Main.overview.show();
+                        if (settings.get_boolean('cycle-windows')) {
+                            windows[(windows[0].has_focus() ? windows.length - 1 : 0)].activate(global.get_current_time());
+                            Main.overview.hide();
+                        } else {
+                            Main.overview.show();
+                        }
                 }
             }
         }

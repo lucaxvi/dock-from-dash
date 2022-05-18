@@ -49,6 +49,9 @@ function buildPrefsWidget() {
     let hideDockDuration = buildSpinButton('hide-dock-duration',_("Duration of dock hiding animation (ms)"), 0, 1000, 50);
     frame.append(hideDockDuration);
 
+    let cycleWindows = buildSwitcher('cycle-windows',_("Cycle windows on icon click"));
+    frame.append(cycleWindows);
+
     frame.show();
     return frame;
 }
