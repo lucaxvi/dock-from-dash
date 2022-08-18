@@ -52,6 +52,9 @@ function buildPrefsWidget() {
     let cycleWindows = buildSwitcher('cycle-windows',_("Cycle windows on icon click"));
     frame.append(cycleWindows);
 
+    let startupOverview = buildSwitcher('startup-overview',_("Show activities overview on startup"));
+    frame.append(startupOverview);
+
     frame.show();
     return frame;
 }

@@ -57,5 +57,11 @@
         <description>Clicking on the icon of a running application cycles through its open windows instead of showing the activities overview.</description>
     </key>
 
+    <key type="b" name="startup-overview">
+        <default>false</default>
+        <summary>Show activities overview on startup</summary>
+        <description>Show activities overview on startup.</description>
+    </key>
+
     </schema>
 </schemalist>
